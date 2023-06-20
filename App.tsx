@@ -4,12 +4,14 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import ProductsScreen from './screens/products/products'
 import InvoiceScreen from './screens/invoice/invoice'
 import UploadScreen from './screens/upload/upload'
+import LoginScreen from './screens/login/login'
 
 const Tab = createBottomTabNavigator();
 
 function MyTabs() {
   return (
     <Tab.Navigator>
+      <Tab.Screen name="Login" component={LoginScreen} />
       <Tab.Screen name="Products" component={ProductsScreen} />
       <Tab.Screen name="Upload" component={UploadScreen} />
       <Tab.Screen name="Invoice" component={InvoiceScreen} />
