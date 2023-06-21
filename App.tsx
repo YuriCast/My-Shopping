@@ -12,7 +12,20 @@ function MyTabs() {
   return (
     <Tab.Navigator>
       <Tab.Screen name="Login" component={LoginScreen} />
-      <Tab.Screen name="Products" component={ProductsScreen} />
+      <Tab.Screen name="Products" component={ProductsScreen} options={{
+          title: 'Lista de Compras',
+          headerTitleAlign: 'center',
+          headerStyle: {
+            backgroundColor: '#7c7ce9',
+            alignItems: 'center',
+            justifyContent: 'center',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}
+/>
       <Tab.Screen name="Upload" component={UploadScreen} />
       <Tab.Screen name="Invoice" component={InvoiceScreen} />
     </Tab.Navigator>
