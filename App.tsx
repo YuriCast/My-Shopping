@@ -39,7 +39,19 @@ function MyTabs() {
             fontWeight: 'bold',
           },
         }}/>
-      <Tab.Screen name="Invoice" component={InvoiceScreen} />
+      <Tab.Screen name="Invoice" component={InvoiceScreen} options={{
+          title: 'Comprovantes',
+          headerTitleAlign: 'center',
+          headerStyle: {
+            backgroundColor: '#7c7ce9',
+            alignItems: 'center',
+            justifyContent: 'center',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}/>
     </Tab.Navigator>
   );
 }
