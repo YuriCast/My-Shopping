@@ -26,7 +26,19 @@ function MyTabs() {
           },
         }}
 />
-      <Tab.Screen name="Upload" component={UploadScreen} />
+      <Tab.Screen name="Upload" component={UploadScreen} options={{
+          title: 'Lista de Compras',
+          headerTitleAlign: 'center',
+          headerStyle: {
+            backgroundColor: '#7c7ce9',
+            alignItems: 'center',
+            justifyContent: 'center',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}/>
       <Tab.Screen name="Invoice" component={InvoiceScreen} />
     </Tab.Navigator>
   );
