@@ -22,10 +22,12 @@ const invoiceStyles = StyleSheet.create({
     color: 'grey'
   },
   info_foto: {
-
+    color: 'grey',
+    marginTop: 10,
+    fontSize: 10,
   },
   crud: {
-    marginTop: 50,
+    marginTop: 24,
     gap: 20,
   },
   crud_container: {
